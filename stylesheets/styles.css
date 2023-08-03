@@ -1,0 +1,229 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(18, 22, 26);
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+header {
+  background-image: url('assets/copywrite_rochester.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FF5F1F;
+  background-blend-mode: color-burn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.headline-text {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.phone-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  min-width: 550px
+}
+
+.buisness-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.buisness-text {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.buisness-text-hwdi {
+  font-size: 15px;
+  max-width: 1000px;
+}
+
+.buisness-text-hwdi h1{
+  font-size: 40px;
+}
+
+.divider-red {
+  background-color: red;
+  min-height: 5px;
+  max-width: 75px;
+}
+
+.divider-red-center {
+  background-color: red;
+  min-height: 5px;
+  margin: 0 calc((100% - 75px) / 2);
+  width: 75px;
+}
+
+.divider-white {
+  background-color: white;
+  min-height: 5px;
+  max-width: 75px;
+}
+
+.ambition-section {
+  background-color: red;
+  color: white;
+  flex: 1 1 auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.ambition-large {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.ambition-text {
+  font-size: 32px;
+  font-weight: normal;
+  max-width: 550px;
+}
+
+.hwdi-list {
+  flex: 0 1 auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+  gap: 40px;
+}
+
+.hwdi-list h1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hwdi-list h2{
+  font-size: 18px;
+  max-width: 300px;
+}
+
+.calendly-content
+{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  gap: 80px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.calendly-inline-widget
+{
+  width: 100%;
+  height: 850px;
+  max-width: 600px;
+  min-width: 525px;
+
+  overflow: visible;
+}
+
+.calendly-text
+{
+  max-width: 580px;
+  font-weight: normal;
+}
+
+.calendly-text h1{
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.calendly-text h2{
+  font-size: 20px;
+}
+
+.calendly-text h3{
+  font-size: 22px;
+  color: orangered;
+}
+
+.calendly-text-list
+{ 
+  font-size: 20px;
+}
+
+.calendly-text-list li
+{ 
+  padding-bottom: 6px;
+}
+
+.portrait
+{
+  border-radius: 100px;
+  max-width: 170px;
+  max-height: 170px;
+  overflow: hidden;
+}
+
+@media all and (max-width:1000px) {
+  .buisness-content {
+    flex-direction: column;
+  }
+  
+  .calendly-content
+  {
+    flex-direction: column;
+  }
+
+  .ambition-section{
+    flex-direction: column;
+  }
+
+  .ambition-large{
+    margin-top: 10%;
+    margin-bottom: 20px;
+  }
+
+  .hwdi-list
+  {
+    flex-direction: column;
+  }
+
+  .hwdi-list h1{
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .hwdi-list h2{
+    font-size: 22px;
+    max-width: 350px;
+  }
+
+}
